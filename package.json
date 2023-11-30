@@ -1,0 +1,35 @@
+{
+    "name": "passthemayo.dev",
+    "version": "1.0.0",
+    "description": "The source code for the passthemayo.dev website.",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "next start src/",
+        "build": "next build src/",
+        "dev": "next dev src/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PassTheMayo/passthemayo.dev.git"
+    },
+    "author": "Jacob Gunther",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/PassTheMayo/passthemayo.dev/issues"
+    },
+    "homepage": "https://github.com/PassTheMayo/passthemayo.dev#readme",
+    "devDependencies": {
+        "eslint": "^8.54.0",
+        "eslint-plugin-react": "^7.33.2"
+    },
+    "dependencies": {
+        "@svgr/webpack": "^8.1.0",
+        "autoprefixer": "^10.4.16",
+        "next": "^14.0.3",
+        "postcss": "^8.4.31",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sass": "^1.69.5",
+        "tailwindcss": "^3.3.5"
+    }
+}
