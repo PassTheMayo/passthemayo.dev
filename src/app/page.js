@@ -4,6 +4,10 @@ import image0002 from '@/assets/images/0002-preview.jpg';
 import image0003 from '@/assets/images/0003-preview.jpg';
 import image0004 from '@/assets/images/0004-preview.jpg';
 import image0005 from '@/assets/images/0005-preview.jpg';
+import image0006 from '@/assets/images/0006-preview.jpg';
+import image0007 from '@/assets/images/0007-preview.jpg';
+import image0008 from '@/assets/images/0008-preview.jpg';
+import image0009 from '@/assets/images/0009-preview.jpg';
 import PhotoDetails from '@/components/PhotoDetails';
 
 export const metadata = {
@@ -12,8 +16,8 @@ export const metadata = {
 
 export default function Page() {
     return (
-        <>
-            <section className="container max-w-3xl mx-auto py-8">
+        <div className="container max-w-3xl mx-auto">
+            <section className="py-8">
                 <p className="font-base text-2xl text-neutral-200">Hi there,</p>
                 <h1 className="text-5xl mt-1">
                     <span className="font-bold">I&apos;m </span>
@@ -21,7 +25,7 @@ export default function Page() {
                 </h1>
                 <p className="mt-3 text-neutral-400 text-lg">&hellip; a full-stack web developer and software engineer with a side passion for photography and film. You can check out my projects and portfolio below or join my community <a href="https://discord.gg/QwvzbA9KGz" className="link">Discord server</a>.</p>
             </section>
-            <section className="container max-w-3xl mx-auto py-8">
+            <section className="py-8">
                 <h2 className="font-bold text-3xl">Projects</h2>
                 <ul className="list-none grid grid-cols-2 gap-3 mt-5">
                     <li>
@@ -57,69 +61,100 @@ export default function Page() {
                 </ul>
             </section>
             <section className="py-8">
-                <div className="container max-w-3xl mx-auto">
-                    <h2 className="font-bold text-3xl">Photography</h2>
-                </div>
-                <div className="container max-w-6xl mx-auto mt-5">
-                    <div className="grid grid-cols-3 grid-rows-3 gap-3 aspect-square">
-                        <PhotoDetails
-                            image={image0001}
-                            location="Springfield, Missouri"
-                            cameraType="Canon EOS R7"
-                            lensType="Canon RF50mm F1.8 STM"
-                            iso="400"
-                            focalLength="50"
-                            aperture="1.8"
-                            shutterSpeed="1/320"
-                            className="col-span-1 row-[1_/_3]"
-                        />
-                        <PhotoDetails
-                            image={image0002}
-                            location="Springfield, Missouri"
-                            cameraType="Canon EOS R7"
-                            lensType="Canon RF50mm F1.8 STM"
-                            iso="100"
-                            focalLength="50"
-                            aperture="1.8"
-                            shutterSpeed="1/640"
-                            className="col-[2_/_4]"
-                        />
-                        <PhotoDetails
-                            image={image0003}
-                            location="Springfield, Missouri"
-                            cameraType="Minolta SRT-201"
-                            lensType="Minolta MC Rokkor-PG 50mm F1.4"
-                            iso="800"
-                            focalLength="50"
-                            aperture="1.4"
-                            shutterSpeed="1/8"
-                            className="col-[2_/_3]"
-                        />
-                        <PhotoDetails
-                            image={image0004}
-                            location="Springfield, Missouri"
-                            cameraType="Canon EOS R7"
-                            lensType="TTArtisan 50mm F0.95"
-                            iso="800"
-                            focalLength="50"
-                            aperture="0.95"
-                            shutterSpeed="1/50"
-                            className="col-[1_/_3]"
-                        />
-                        <PhotoDetails
-                            image={image0005}
-                            location="Springfield, Missouri"
-                            cameraType="Canon EOS R7"
-                            lensType="Canon RF50mm F1.8 STM"
-                            iso="100"
-                            focalLength="50"
-                            aperture="1.8"
-                            shutterSpeed="1/400"
-                            className="col-[3_/_4] row-[2_/_4]"
-                        />
-                    </div>
+                <h2 className="font-bold text-3xl">Photography</h2>
+                <div className="grid grid-cols-3 gap-3 mt-5">
+                    <PhotoDetails
+                        image={image0001}
+                        location="Springfield, Missouri"
+                        cameraType="Canon EOS R7"
+                        lensType="Canon RF50mm F1.8 STM"
+                        iso="400"
+                        focalLength="50"
+                        aperture="1.8"
+                        shutterSpeed="1/320"
+                    />
+                    <PhotoDetails
+                        image={image0002}
+                        location="Springfield, Missouri"
+                        cameraType="Canon EOS R7"
+                        lensType="Canon RF50mm F1.8 STM"
+                        iso="100"
+                        focalLength="50"
+                        aperture="1.8"
+                        shutterSpeed="1/640"
+                    />
+                    <PhotoDetails
+                        image={image0003}
+                        location="Springfield, Missouri"
+                        cameraType="Minolta SRT-201"
+                        lensType="Minolta MC Rokkor-PG 50mm F1.4"
+                        iso="800"
+                        focalLength="50"
+                        aperture="1.4"
+                        shutterSpeed="1/8"
+                    />
+                    <PhotoDetails
+                        image={image0004}
+                        location="Springfield, Missouri"
+                        cameraType="Canon EOS R7"
+                        lensType="TTArtisan 50mm F0.95"
+                        iso="800"
+                        focalLength="50"
+                        aperture="0.95"
+                        shutterSpeed="1/50"
+                    />
+                    <PhotoDetails
+                        image={image0005}
+                        location="Springfield, Missouri"
+                        cameraType="Canon EOS R7"
+                        lensType="Canon RF50mm F1.8 STM"
+                        iso="100"
+                        focalLength="50"
+                        aperture="1.8"
+                        shutterSpeed="1/400"
+                    />
+                    <PhotoDetails
+                        image={image0006}
+                        location="Springfield, Missouri"
+                        cameraType="Canon EOS R7"
+                        lensType="Canon RF50mm F1.8 STM"
+                        iso="1000"
+                        focalLength="50"
+                        aperture="1.8"
+                        shutterSpeed="1/100"
+                    />
+                    <PhotoDetails
+                        image={image0007}
+                        location="Springfield, Missouri"
+                        cameraType="Canon EOS R7"
+                        lensType="Canon RF-S18-150mm F3.5-6.3 IS STM"
+                        iso="100"
+                        focalLength="18"
+                        aperture="5"
+                        shutterSpeed="1/500"
+                    />
+                    <PhotoDetails
+                        image={image0008}
+                        location="Springfield, Missouri"
+                        cameraType="Canon EOS R7"
+                        lensType="Canon RF-S18-150mm F3.5-6.3 IS STM"
+                        iso="100"
+                        focalLength="76"
+                        aperture="6.3"
+                        shutterSpeed="1/400"
+                    />
+                    <PhotoDetails
+                        image={image0009}
+                        location="Springfield, Missouri"
+                        cameraType="Canon EOS Rebel T6"
+                        lensType="EF-S18-55mm f/3.5-5.6 IS II"
+                        iso="1600"
+                        focalLength="36"
+                        aperture="11"
+                        shutterSpeed="1/125"
+                    />
                 </div>
             </section>
-        </>
+        </div>
     );
 }

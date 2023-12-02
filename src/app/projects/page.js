@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import mcstatusIcon from '@/assets/images/mcs.png';
+import mcstatusIcon from '@/assets/images/mcstatus.png';
 import mineatarIcon from '@/assets/images/mineatar.png';
 
 export const metadata = {
