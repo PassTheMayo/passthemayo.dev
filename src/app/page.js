@@ -4,7 +4,11 @@ import image0002 from '@/assets/images/0002-preview.jpg';
 import image0003 from '@/assets/images/0003-preview.jpg';
 import image0004 from '@/assets/images/0004-preview.jpg';
 import image0005 from '@/assets/images/0005-preview.jpg';
-import PhotoDetails from '../components/PhotoDetails';
+import PhotoDetails from '@/components/PhotoDetails';
+
+export const metadata = {
+    title: 'Hello, I\'m Jacob Gunther'
+};
 
 export default function Page() {
     return (
